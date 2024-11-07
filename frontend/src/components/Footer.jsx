@@ -68,7 +68,7 @@ const Footer = () => {
             <h4>Contact</h4>
             <div>
               <FaPhone />
-              <span>62033713XX</span>
+              <span>1000000000</span>
             </div>
             <div>
               <MdEmail />
