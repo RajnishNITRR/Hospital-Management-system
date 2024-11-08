@@ -1,6 +1,6 @@
 import app from "../app.js";
 import cloudinary from "cloudinary";
-import { VercelRequest, VercelResponse } from '@vercel/node'; // Optional, for better typing
+// import { VercelRequest, VercelResponse } from "@vercel/node"; // Optional, for better typing
 
 cloudinary.v2.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
