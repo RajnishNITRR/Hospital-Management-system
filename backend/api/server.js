@@ -1,4 +1,4 @@
-import app from "./app.js";
+import app from "../app.js";
 import cloudinary from "cloudinary";
 import { VercelRequest, VercelResponse } from '@vercel/node'; // Optional, for better typing
 
