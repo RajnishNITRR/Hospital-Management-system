@@ -1,4 +1,4 @@
 node_modules
 backend/config/config.env
-frontend/config/config.env
+frontend/.env
 dashboard/config/config.env
