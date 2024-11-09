@@ -34,7 +34,7 @@ const AppointmentForm = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       const { data } = await axios.get(
-        `${process.env.BACKEND_URL}/api/v1/user/doctors`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/v1/user/doctors`,
         { withCredentials: true }
       );
       setDoctors(data.doctors);
@@ -47,7 +47,7 @@ const AppointmentForm = () => {
     try {
       const hasVisitedBool = Boolean(hasVisited);
       const { data } = await axios.post(
-        `${process.env.BACKEND_URL}/api/v1/appointment/post`,
+        `${process.env.REACT_APP_BACKEND_URL}/api/v1/appointment/post`,
         {
           firstName,
           lastName,

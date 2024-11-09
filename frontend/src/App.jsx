@@ -21,7 +21,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          `${process.env.BACKEND_URL}/api/v1/user/patient/me`,
+          `${process.env.REACT_APP_BACKEND_URL}/api/v1/user/patient/me`,
           {
             withCredentials: true,
           }

@@ -15,7 +15,7 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          `{https://hospital-management-system-plum-sigma.vercel.app/api/v1/message/send`,
+          `${process.env.REACT_APP_BACKEND_URL}/api/v1/message/send`,
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,
