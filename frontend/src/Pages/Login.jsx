@@ -17,7 +17,7 @@ const Login = () => {
     try {
       await axios
         .post(
-          "https://hospital-management-system-plum-sigma.vercel.app/api/v1/user/login",
+          `${import.meta.env.VITE_BACKEND_URL}/api/v1/user/login`,
           { email, password, role: "Patient" },
           {
             withCredentials: true,
